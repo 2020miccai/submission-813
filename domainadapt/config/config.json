@@ -1,0 +1,43 @@
+{
+  "directories": {
+      "datafile": "./domainadapt/data/",
+      "out_dir": "Experiments",
+      "ConfigName": "Exp_1"
+  },
+  "model_params": {
+    "feat": 4,
+    "hid": 256,
+    "par": 32,
+    "emb_siz": 3,
+    "ker_siz": 6,
+    "feat_dis": 32,
+    "hid_dis": 128,
+    "par_dis": 64,
+    "emb_siz_dis": 3,
+    "ker_siz_dis": 6,
+    "use_weight": 1
+  },
+  "optimizer_wh": {
+    "B1": 0.9,
+    "B2": 0.999,
+    "LR_seg": 0.01,
+    "LR_dis": 0.0001
+  },
+  "optimizer_mu": {
+    "LR": 0.000000001
+  },
+
+  "optimizer_si": {
+    "LR": 1000
+  },
+
+  "generator": {
+      "use_discriminator": 1,
+      "num_epochs": 1000,
+      "initial_epoch": 0,
+      "batch_size": 1,
+      "plot_separate": 1,
+      "set_lamda": 5000,
+      "plot_hist": 1
+  }
+}
